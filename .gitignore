@@ -3,3 +3,16 @@
 ################################################################################
 
 /Microsoft.Demos.FileSharingService.API/bin
+/Microsoft.Demos.FileSharingService.API/obj
+/Microsoft.Demos.FileSharingService.API.Tests/bin/Debug/netcoreapp2.0
+/Microsoft.Demos.FileSharingService.API.Tests/obj
+/Microsoft.Demos.FileSharingService.ARM/obj/Debug
+/Microsoft.Demos.FileSharingService.ARM/bin/Debug/staging/Microsoft.Demos.FileSharingService.ARM
+/Microsoft.Demos.FileSharingService.UI/bin
+/Microsoft.Demos.FileSharingService.UI/obj
+/.vs/Microsoft.Demos.FileSharingService/lut/0/0/Microsoft.Demos.FileSharingService.API/Debug/netcoreapp2.0
+/Microsoft.Demos.FileSharingService.API/Properties/PublishProfiles/msdemosfileshare - Web Deploy.pubxml.user
+/Microsoft.Demos.FileSharingService.API/Properties/PublishProfiles/msdemosfileshare - Web Deploy.pubxml
+/Microsoft.Demos.FileSharingService.API.Tests/bin/Release/netcoreapp2.0
+/.vs/Microsoft.Demos.FileSharingService/lut
+/.vs
