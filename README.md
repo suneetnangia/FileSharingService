@@ -28,8 +28,8 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-acce
 7. UI Layer will need to refresh sas token if the previous one is expired due to token TTL.
 8. Monitor storage accounts for SAS token validation failures to proactively find the issues.
 9. Please consider use of API Management service if you have multiple services exposed to applications. 
-10. Upload Flow- Lead user logs in via Okta, Okta returns claim lead=true, API validates the token, returns the write only SAS token at the container level to UI. Allowed users must present the claim which allowed by API via reference data stored in Cosmos DB, to start with, it will be Lead=True. Permission matrix will include group name and files mapping.
-When uploading files, Okta claims which include the Trust specific Okta group name which will be used in permission matrix to allow anyone in that group to manage files.
+10. Upload Flow- Lead user logs in via AAD, AAD returns claim lead=true, API validates the token, returns the write only SAS token at the container level to UI. Allowed users must present the claim which allowed by API via reference data stored in Cosmos DB, to start with, it will be Lead=True. Permission matrix will include group name and files mapping.
+When uploading files, AAD claims which include the Trust specific AAD group name which will be used in permission matrix to allow anyone in that group to manage files.
 
 11. SAS (Service SAS, adhoc) token for downloaders can have the following limitations-
 *IP
