@@ -43,6 +43,23 @@ When uploading files, AAD claims which include the Trust specific AAD group name
 
 12. Invalidation of SAS token is important, please consider this thoroughly. 
 
+## Cosmos DB Doc Structure
+
+{
+    "id": "replace_with_new_document_id",
+    "Identity": "suneetnangia@yxz.com",
+    "File": {
+        "Container": "allfiles",
+        "Path": "article1.json",
+        "Permissions": 1
+    },
+    "_rid": "XRwCAIvO8AABAAAAAAAAAA==",
+    "_self": "dbs/XRwCAA==/colls/XRwCAIvO8AA=/docs/XRwCAIvO8AABAAAAAAAAAA==/",
+    "_etag": "\"3600e867-0000-0000-0000-5a003ec70000\"",
+    "_attachments": "attachments/",
+    "_ts": 1509965511
+}
+
 Reference Documents-
 
 https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
