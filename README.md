@@ -12,10 +12,10 @@ This is the implementation of second pattern "A lightweight service authenticate
 https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
 
 
-##Overall Design
+## Overall Design
 
 <p align="center">
-  <img src="https://github.com/suneetnangia/FileSharingService/blob/master/FileSharingServiceDesign.PNG?raw=true" width="400"/>  
+  <img src="https://github.com/suneetnangia/FileSharingService/blob/master/FileSharingServiceDesign.PNG?raw=true" width="800"/>  
 </p>
 
 ## Notes-
@@ -32,14 +32,19 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-acce
 When uploading files, AAD claims which include the Trust specific AAD group name which will be used in permission matrix to allow anyone in that group to manage files.
 
 11. SAS (Service SAS, adhoc) token for downloaders can have the following limitations-
+
 *IP
+
 *Token TTL
+
 *Https only access
+
 *On demand when download link is clicked.
 
 12. Invalidation of SAS token is important, please consider this thoroughly. 
 
 Reference Documents-
+
 https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
 https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits#storage-limits
 https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview
